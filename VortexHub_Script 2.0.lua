@@ -77,7 +77,6 @@ local function teleportTo(position)
     end
 end
 
--- Add teleport buttons
 local teleportLocations = {
     { Title = "Teleport to Moosewood", Position = Vector3.new(386.92, 134.51, 252.23) },
     { Title = "Teleport to Roslit", Position = Vector3.new(-1467.63, 132.52, 711.78) },
@@ -87,12 +86,14 @@ local teleportLocations = {
     { Title = "Teleport to Sunstone Island", Position = Vector3.new(-935, 130, -1105) },
     { Title = "Teleport to Forsaken Shores", Position = Vector3.new(-2425, 135, 1555) },
     { Title = "Teleport to Statue of Sovereignty", Position = Vector3.new(20, 160, -1040) },
-    { Title = "Teleport to Keepers Altar", Position = Vector3.new(1380, -805, -300) },
-    { Title = "Teleport to Vertigo", Position = Vector3.new(1310.0255126953125, -805.2923583984375, -106.29073333740234) },
+    { Title = "Teleport to Keepers Altar", Position = Vector3.new(1310.0255126953125, -805.2923583984375, -106.29073333740234) },
+    { Title = "Teleport to Vertigo", Position = Vector3.new(-110, -515, 1040) },
     { Title = "Teleport to Desolate Deep", Position = Vector3.new(-790.1,142.6,-3101.9) },
-    { Title = "Teleport to Brine Pool", Position = Vector3.new(5833, 125, 401) }
-    -- Add more locations here
+    { Title = "Teleport to Ancient Isle", Position = Vector3.new(5833, 125, 401) },
+    { Title = "Teleport to Brine Pool", Position = Vector3.new( -1810, -140, -3300 ) }
+    -- Add more locations here	
 }
+
 
 for _, location in ipairs(teleportLocations) do
     Tabs.TP:AddButton({
